@@ -25,7 +25,7 @@ class DifyDslFlowchartExportEndpoint(Endpoint):
 
         host = settings.get("dify_console_api_domain")
         if not host:
-            host = "localhost"
+            host = "cloud.dify.ai"
         app_id = settings.get("app").get("app_id")
         access_token = settings.get("dify_access_token")
         flowchat_direction = settings.get("flowchart_direction")

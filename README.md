@@ -20,7 +20,7 @@ Convert dify app dsl to mermaid flowchart
    - input your **Dify access token**
    - choose your Dify app flow
    - choose the direction of the flowchart
-   - input your dify console api domain (default:localhost)
+   - input your dify console api domain (default:cloud.dify.ai)
 3. Access the endpoint
 
 ### How to get the access token
@@ -70,4 +70,3 @@ https://cloud.dify.ai/apps?access_token={your access_token}&refresh_token={your 
 - We **only use** it to access the Dify app flow DSL.
 - We **do not** save the data from the DSL, but only use it to make the flowchart.
 - The access token might need to be re-acquired if it has expired.
- 

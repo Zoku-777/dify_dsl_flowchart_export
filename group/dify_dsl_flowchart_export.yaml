@@ -51,8 +51,8 @@ settings:
       zh_Hans: Dify控制台API领域
       ja_JP: DifyコンソールAPIドメイン
     placeholder:
-      en_US: Input your Dify Console API domain(default:localhost)
-      zh_Hans: 请输入你的Dify控制台API领域(默认值:localhost)
-      ja_JP: DifyコンソールAPIのドメインを入力してください(default:localhost)
+      en_US: Input your Dify Console API domain(default:cloud.dify.ai)
+      zh_Hans: 请输入你的Dify控制台API领域(默认值:cloud.dify.ai)
+      ja_JP: DifyコンソールAPIのドメインを入力してください(default:cloud.dify.ai)
 endpoints:
   - endpoints/dify_dsl_flowchart_export.yaml

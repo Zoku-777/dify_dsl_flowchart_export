@@ -1,0 +1,35 @@
+version: 0.0.1
+type: plugin
+author: zoku-777
+name: dify_dsl_flowchart_export
+label:
+  en_US: Dify DSL Flowchart Convertor
+  zh_Hans: Dify工作流流程图转换
+  ja_JP: DifyフローDSLフロチャート変換
+description:
+  en_US: Convert dify app dsl to mermaid flowchart
+  zh_Hans: 把Dify工作流DSL转换成流程图
+  ja_JP: DifyフローDSLからフロチャートに変換
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission:
+    endpoint:
+      enabled: true
+plugins:
+  endpoints:
+    - group/dify_dsl_flowchart_export.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-09-05T16:37:42.239499804+09:00
+privacy: PRIVACY.md
+verified: false

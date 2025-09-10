@@ -1,0 +1,5 @@
+path: "/dify_dsl_flowchart_export"
+method: "GET"
+extra:
+  python:
+    source: "endpoints/dify_dsl_flowchart_export.py"

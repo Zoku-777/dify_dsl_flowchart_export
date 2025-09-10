@@ -1,0 +1,58 @@
+settings:
+  - name: dify_access_token
+    type: secret-input
+    required: true
+    label:
+      en_US: Dify Access Token
+      zh_Hans: Dify访问令牌(Access Token)
+      ja_JP: Difyアクセストークン
+    placeholder:
+      en_US: Please input your Dify Access Token
+      zh_Hans: 请输入你的Dify访问令牌(Access Token)
+      ja_JP: Difyアクセストークンを入力してください
+  - name: app
+    type: app-selector
+    scope: chat
+    required: true
+    label:
+      en_US: Target flow
+      zh_Hans: 工作流选择
+      ja_JP: フロー選択
+    placeholder:
+      en_US: Please choose the target flow
+      zh_Hans: 请选择要转换的工作流
+      ja_JP: 対象フローを選択してください
+  - name: flowchart_direction
+    type: select
+    required: true
+    label:
+      en_US: Direction of the flowchart
+      zh_Hans: 流程图方向
+      ja_JP: フロチャート表示方向
+    placeholder:
+      en_US: Please choose the direction of the flowchart
+      zh_Hans: 请选择流程图的方向
+      ja_JP: フロチャートの方向を選択してください
+    options:
+      - label:
+          en_US: from top to down
+          zh_Hans: 从上到下
+          ja_JP: 上から下
+        value: TD
+      - label:
+          en_US: from left to right
+          zh_Hans: 从左往右
+          ja_JP: 左から右
+        value: LR
+  - name: dify_console_api_domain
+    type: text-input
+    label:
+      en_US: Dify Console API Domain
+      zh_Hans: Dify控制台API领域
+      ja_JP: DifyコンソールAPIドメイン
+    placeholder:
+      en_US: Input your Dify Console API domain(default:localhost)
+      zh_Hans: 请输入你的Dify控制台API领域(默认值:localhost)
+      ja_JP: DifyコンソールAPIのドメインを入力してください(default:localhost)
+endpoints:
+  - endpoints/dify_dsl_flowchart_export.yaml

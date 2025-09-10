@@ -1,0 +1,10 @@
+[project]
+name = "dify-dsl-flowchart-export"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dify-plugin>=0.4.4",
+    "markdown>=3.9",
+]
